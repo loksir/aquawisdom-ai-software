@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Macbeth</string>
+    <string name="title_activity_main">Macbeth</string>
+    <string name="package_name">com.aquawisdom.b10_v1</string>
+    <string name="custom_url_scheme">com.aquawisdom.b10_v1</string>
+</resources>

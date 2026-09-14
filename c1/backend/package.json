@@ -1,0 +1,49 @@
+{
+  "name": "aquawisdom-server",
+  "version": "2.1.0",
+  "type": "module",
+  "scripts": {
+    "seed": "tsx scripts/seed-database.js",
+    "start": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.2",
+    "@langchain/core": "^0.3.70",
+    "@langchain/ollama": "^0.2.3",
+    "apollo-server-express": "^3.13.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "class-validator": "^0.14.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "graphql": "^16.11.0",
+    "graphql-middleware": "^6.1.35",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-tools": "^9.0.18",
+    "memorystore": "^1.6.7",
+    "node-fetch": "^2.7.0",
+    "ollama": "^0.5.17",
+    "pg": "^8.16.1",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.20.3",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/bcryptjs": "^3.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/express-serve-static-core": "^5.0.6",
+    "@types/express-session": "^1.18.2",
+    "@types/node-fetch": "^2.6.12",
+    "@types/pg": "^8.15.4",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  }
+}

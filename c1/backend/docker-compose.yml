@@ -1,0 +1,39 @@
+services:
+  ollama:
+    image: aquawisdom-ollama-c1:latest
+    container_name: aquawisdom-c1-ollama
+    cpus: "2.0"
+    ports:
+      - "11437:11434"
+    volumes:
+      - ollama_models_c1:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - c1-network
+
+  aquawisdom-api-c1:
+    image: aquawisdom-api:c1-1.0.0
+    build: .
+    ports:
+      - "5100:5100"
+    environment:
+      - NODE_ENV=production
+      - DOCKER_ENV=true
+      - PORT=5100
+      - HOST=0.0.0.0
+      - OLLAMA_HOST=http://ollama:11437
+      - OLLAMA_MODEL=Aqua_C1_v1
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    depends_on:
+      - ollama
+    networks:
+      - c1-network
+
+volumes:
+  ollama_models_c1:
+
+networks:
+  c1-network:
+    driver: bridge

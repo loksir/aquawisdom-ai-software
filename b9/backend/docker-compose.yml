@@ -1,0 +1,39 @@
+services:
+  ollama:
+    image: aquawisdom-ollama-b9:latest
+    container_name: aquawisdom-b9-ollama
+    cpus: "2.0"
+    ports:
+      - "11437:11434"
+    volumes:
+      - ollama_models_b9:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - b9-network
+
+  aquawisdom-api-b9:
+    image: aquawisdom-api:b9-1.0.0
+    build: .
+    ports:
+      - "5019:5019"
+    environment:
+      - NODE_ENV=production
+      - DOCKER_ENV=true
+      - PORT=5019
+      - HOST=0.0.0.0
+      - OLLAMA_HOST=http://ollama:11437
+      - OLLAMA_MODEL=Aqua_B9_v1
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    depends_on:
+      - ollama
+    networks:
+      - b9-network
+
+volumes:
+  ollama_models_b9:
+
+networks:
+  b9-network:
+    driver: bridge

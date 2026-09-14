@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">三國演義</string>
+    <string name="title_activity_main">三國演義</string>
+    <string name="package_name">com.aquawisdom.b7_v1</string>
+    <string name="custom_url_scheme">com.aquawisdom.b7_v1</string>
+</resources>

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Build artifacts
+build/
+dist/
+android/.gradle/
+android/app/build/
+android/app/src/main/assets/public/
+*.apk
+*.tar.gz
+
+# Environment & Data
+.env
+backend/data/
+*.db
+*.pem
+*.crt
+
+# Ollama Models
+*.gguf
+Modelfile

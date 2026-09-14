@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Family Hub</string>
+    <string name="title_activity_main">Family Hub</string>
+    <string name="package_name">com.aquawisdom.c1_v1</string>
+    <string name="custom_url_scheme">com.aquawisdom.c1_v1</string>
+</resources>

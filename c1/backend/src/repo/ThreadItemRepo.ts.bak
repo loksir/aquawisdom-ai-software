@@ -1,0 +1,79 @@
+// B8专用 AI Resolver - Western History - v1.0
+import { isThreadBodyValid } from "./common/validators/ThreadValidator";
+import { QueryOneResult } from "./QueryArrayResult";
+import { ThreadItem } from "./ThreadItem";
+import { User } from "./User";
+import { Thread } from "./Thread";
+
+async function callOllama(prompt: string): Promise<string> {
+  const ollamaUrl = process.env.OLLAMA_HOST || "http://ollama:11437";
+  const model = process.env.OLLAMA_MODEL || "Aqua_B8_v1";
+  const response = await fetch(`${ollamaUrl}/api/generate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ model, prompt, stream: false })
+  });
+  if (!response.ok) throw new Error(`Ollama error: ${response.status}`);
+  const data = await response.json();
+  return data.response;
+}
+
+const lastMenuMap = new Map<string, string>();
+const setLastMenu = (threadId: string, menu: string): void => { lastMenuMap.set(threadId, menu); };
+const getLastMenu = (threadId: string): string => lastMenuMap.get(threadId) || "1";
+
+const getBaseCategoryName = (categoryName: string): string => categoryName.split("（")[0].split("(")[0].trim();
+
+const getMenuByNumber = (menuNumber: string, categoryName: string): string => {
+  const baseName = getBaseCategoryName(categoryName);
+  const menus: Record<string, string> = {
+    "1": `【Historical Guide】"${baseName}"\n\n#1 What is the historical background and context?\n#2 Who were the key participants or figures involved?\n#3 What were the major events or developments?\n#4 What is the historical significance and impact?\n#5 What are the cause-and-effect relationships?\n\nEnter m2 Casual Reading | mm All Menus`,
+    "2": `【Casual Reading】"${baseName}"\n\n#1 What are the essential facts to know?\n#2 Who or what is most notable about this topic?\n#3 What are the distinctive characteristics or features?\n#4 What can we understand from examining this history?\n#5 What are the key takeaways?\n\nEnter m3 Detailed Study | mm All Menus`,
+    "3": `【Detailed Study】"${baseName}"\n\n#1 Chronological development and factual timeline\n#2 Analysis of causes, actions, and consequences\n#3 Examination of primary sources and evidence\n#4 Historiographical debates and interpretations\n#5 Comparison with parallel historical developments\n\nEnter m4 Academic Research | mm All Menus`,
+    "4": `【Academic Research】"${baseName}"\n\n#1 Major scholarly perspectives and debates\n#2 Different historiographical approaches\n#3 Source criticism and methodological issues\n#4 Comparative analysis with other cases\n#5 Long-term impact and legacy assessment\n\nEnter m5 Exam Prep | mm All Menus`,
+    "5": `【Exam Prep】"${baseName}"\n\n#1 Key facts and concepts summary\n#2 Frequently tested figures, events, and terms\n#3 Important dates and chronological markers\n#4 Analytical frameworks and essay approaches\n#5 Common question types and model answers\n#6 Generate 10 multiple choice questions\n#7 Generate 5 short answer questions\n\nEnter m6 Comparative Analysis | mm All Menus`,
+    "6": `【Comparative Analysis】"${baseName}"\n\n#1 Comparison with preceding and subsequent periods\n#2 Contrasting different figures or cases\n#3 Cross-cultural or cross-regional comparison\n#4 Comparing different historical interpretations\n#5 Multi-perspective analysis (political, economic, social, cultural)\n\nEnter mm All Menus`,
+    "master": `【All Menus】\n\nEnter code to switch menus:\nm1 Historical Guide (Core facts)\nm2 Casual Reading (Essential knowledge)\nm3 Detailed Study (In-depth analysis)\nm4 Academic Research (Scholarly perspectives)\nm5 Exam Prep (Test preparation)\nm6 Comparative Analysis (Contrast and connect)\nmm This guide\nm9 System Status\n\nEnter m1 to start exploring Western History`,
+    "9": `【System Status】\n\nCurrent Topic: ${baseName}\nAI Model: Aqua_B8_v1\nService Status: Running\nConversation Memory: Last 3 exchanges\nData Source: Western Civilization History\n\nEnter m1 to start exploring`
+  };
+  return menus[menuNumber] || menus["1"];
+};
+
+export const createThreadItem = async (userId: string | undefined | null, threadId: string, body: string): Promise<QueryOneResult<ThreadItem>> => {
+  let plainBody = body;
+  try {
+    const parsed = JSON.parse(body);
+    if (Array.isArray(parsed) && parsed[0]?.type === "paragraph" && parsed[0]?.children?.[0]?.text) {
+      plainBody = parsed[0].children[0].text;
+    }
+  } catch(e) {}
+  
+  const trimmed = plainBody.trim().toLowerCase();
+  
+  if (trimmed.match(/^m[1-6]$/) || trimmed === "mm") {
+    const user = await User.findOne({ where: { id: userId } });
+    if (!user) return { messages: ["User not found."] };
+    const thread = await Thread.findOne({ where: { id: threadId }, relations: ["category"] });
+    if (!thread) return { messages: ["Thread not found."] };
+    const categoryName = thread.category?.name || "Western History";
+    const baseName = getBaseCategoryName(categoryName);
+    let menuMessage = "";
+    if (trimmed === "mm") {
+      menuMessage = getMenuByNumber("master", baseName);
+    } else {
+      const num = trimmed.charAt(1);
+      menuMessage = getMenuByNumber(num, baseName);
+      setLastMenu(threadId, num);
+    }
+    const threadItem = await ThreadItem.create({ body, user, thread, aiResponse: JSON.stringify([{ type: "paragraph", children: [{ text: menuMessage }] }]) }).save();
+    return { messages: [`${threadItem.id}`] };
+  }
+  
+  const user = await User.findOne({ where: { id: userId } });
+  const thread = await Thread.findOne({ where: { id: threadId }, relations: ["category"] });
+  if (!user || !thread) return { messages: ["Error"] };
+  
+  const aiResponse = await callOllama(plainBody);
+  const threadItem = await ThreadItem.create({ body, user, thread, aiResponse: JSON.stringify([{ type: "paragraph", children: [{ text: aiResponse }] }]) }).save();
+  return { messages: [`${threadItem.id}`] };
+};

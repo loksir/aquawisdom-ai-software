@@ -1,0 +1,10 @@
+node_modules/
+*.ts
+*.tsx
+!*.js
+.git/
+.env*
+*.log
+*.db
+data/
+backups/

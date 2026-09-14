@@ -1,0 +1,88 @@
+const { AppDataSource_Joint_UT_SQL_CAP_S1_B6 } = require('../src/index');
+const { ThreadCategory } = require('../src/repo/ThreadCategory');
+const { User } = require('../src/repo/User');
+const bcrypt = require('bcrypt');
+const fs = require('fs');
+const path = require('path');
+
+async function seedDatabase() {
+    try {
+        console.log('=========================================');
+        console.log('B6 DATABASE SEED - Chinese Literature Categories');
+        console.log('=========================================');
+        
+        await new Promise(resolve => setTimeout(resolve, 3000));
+        
+        if (!AppDataSource_Joint_UT_SQL_CAP_S1_B6.isInitialized) {
+            await AppDataSource_Joint_UT_SQL_CAP_S1_B6.initialize();
+        }
+        
+        const categoryRepo = AppDataSource_Joint_UT_SQL_CAP_S1_B6.getRepository(ThreadCategory);
+        const userRepo = AppDataSource_Joint_UT_SQL_CAP_S1_B6.getRepository(User);
+        
+        // Create users
+        console.log('\n📝 Creating users...');
+        const usersData = JSON.parse(fs.readFileSync(path.join(__dirname, '../seed-data/users.json'), 'utf8'));
+        
+        for (const userData of usersData) {
+            const existing = await userRepo.findOne({ where: { userName: userData.userName } });
+            if (!existing) {
+                const hashedPassword = await bcrypt.hash(userData.password, 10);
+                const user = userRepo.create({ 
+                    userName: userData.userName, 
+                    password: hashedPassword, 
+                    email: userData.email 
+                });
+                await userRepo.save(user);
+                console.log(`  ✅ Created user: ${userData.userName}`);
+            }
+        }
+        
+        // Create categories from JSON file
+        const existingCategories = await categoryRepo.count();
+        
+        if (existingCategories === 0) {
+            console.log('\n📂 Creating categories from JSON file...');
+            
+            const jsonPath = path.join(__dirname, '../seed-data/threads/chinese-literature-categories.json');
+            
+            if (!fs.existsSync(jsonPath)) {
+                console.error('❌ JSON file not found:', jsonPath);
+                process.exit(1);
+            }
+            
+            const categoriesData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+            console.log(`  Found ${categoriesData.length} categories to create...`);
+            
+            let createdCount = 0;
+            
+            for (const categoryData of categoriesData) {
+                const category = new ThreadCategory();
+                category.name = categoryData.title;
+                category.description = categoryData.body;
+                await categoryRepo.save(category);
+                createdCount++;
+                
+                if (createdCount % 20 === 0) {
+                    console.log(`  ✅ Created ${createdCount} categories...`);
+                }
+            }
+            
+            console.log(`\n✅ Created ${createdCount} categories total`);
+            
+        } else {
+            console.log(`\n✅ Categories already exist (${existingCategories} found), skipping seed`);
+        }
+        
+        console.log('\n=========================================');
+        console.log('B6 DATABASE SEED COMPLETE');
+        console.log('=========================================');
+        process.exit(0);
+        
+    } catch (error) {
+        console.error('❌ Seed error:', error);
+        process.exit(1);
+    }
+}
+
+seedDatabase();

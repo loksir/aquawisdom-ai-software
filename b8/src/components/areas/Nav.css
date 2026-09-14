@@ -1,0 +1,12 @@
+nav {
+    background-color: #26dada;
+    /* background-color: rgb(172, 173, 173); */
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .nav-mobile-menu {
+    margin-right: 1em;
+  }

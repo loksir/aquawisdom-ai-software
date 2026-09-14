@@ -1,0 +1,180 @@
+import React, { FC, useEffect, useState } from "react";
+import ThreadItem from "../../../models/ThreadItem";
+import ThreadResponse from "./ThreadResponse";
+import { TTSButton } from "../../TTSButton";
+
+interface ThreadResponsesBuilderProps {
+  threadItems?: Array<ThreadItem>;
+  readOnly: boolean;
+  refreshThread?: () => void;
+}
+
+const ThreadResponsesBuilder: FC<ThreadResponsesBuilderProps> = ({
+  threadItems,
+  readOnly,
+  refreshThread,
+}) => {
+  const [responseElements, setResponseElements] = useState<
+    React.JSX.Element | undefined
+  >();
+
+  useEffect(() => {
+    if (threadItems) {
+      const thResponses = threadItems.map((ti) => {
+        return (
+          <li key={`thr-${ti.id}`}>
+            <ThreadResponse
+              body={ti.body}
+              userName={ti.user.userName}
+              lastModifiedOn={ti.createdOn}
+              points={ti.points}
+              readOnly={readOnly}
+              threadItemId={ti?.id || "0"}
+              userId={ti?.user.id || "0"}
+              // threadId={ti.thread.id}
+              // refreshThread={refreshThread}
+            />
+             <ThreadResponse
+              body={ti.aiResponse}
+              userName="aqua"
+              lastModifiedOn={ti.createdOn}
+              points={ti.points}
+              readOnly={readOnly}
+              threadItemId={ti?.id || "0"}
+              userId={ti?.user.id || "0"}
+              // threadId={ti.thread.id}
+              // refreshThread={refreshThread}
+            />
+               {/* ADD TTS BUTTON BELOW AI RESPONSE */}
+            <TTSButton threadItemId={ti?.id || "0"} initialText={ti.aiResponse} />
+          </li>
+
+        );
+      });
+      setResponseElements(<ul>{thResponses}</ul>);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [threadItems, readOnly]);
+
+  return (
+    <div className="thread-body-container">
+      <strong style={{ marginBottom: ".75em" }}>Aqua Responses</strong>
+      {responseElements}
+    </div>
+  );
+};
+
+export default ThreadResponsesBuilder;
+
+// import React, { FC, useEffect, useState } from "react";
+// import ThreadItem from "../../../models/ThreadItem";
+// import ThreadResponse from "./ThreadResponse";
+
+// interface ThreadResponsesBuilderProps {
+//   threadItems?: Array<ThreadItem>;
+//   readOnly: boolean;
+//   refreshThread?: () => void;
+// }
+
+// const ThreadResponsesBuilder: FC<ThreadResponsesBuilderProps> = ({
+//   threadItems,
+//   readOnly,
+//   refreshThread,
+// }) => {
+//   const [responseElements, setResponseElements] = useState<
+//     React.JSX.Element | undefined
+//   >();
+
+//   useEffect(() => {
+//     if (threadItems) {
+//       const thResponses = threadItems.map((ti) => {
+//         return (
+//           <li key={`thr-${ti.id}`}>
+//             <ThreadResponse
+//               body={ti.body}
+//               userName={ti.user.userName}
+//               lastModifiedOn={ti.createdOn}
+//               points={ti.points}
+//               readOnly={readOnly}
+//               threadItemId={ti?.id || "0"}
+//               userId={ti?.user.id || "0"}
+//               // threadId={ti.thread.id}
+//               // refreshThread={refreshThread}
+//             />
+//              <ThreadResponse
+//               body={ti.aiResponse}
+//               userName="aqua"
+//               lastModifiedOn={ti.createdOn}
+//               points={ti.points}
+//               readOnly={readOnly}
+//               threadItemId={ti?.id || "0"}
+//               userId={ti?.user.id || "0"}
+//               // threadId={ti.thread.id}
+//               // refreshThread={refreshThread}
+//             />
+//           </li>
+
+//         );
+//       });
+//       setResponseElements(<ul>{thResponses}</ul>);
+//     }
+//     // eslint-disable-next-line react-hooks/exhaustive-deps
+//   }, [threadItems, readOnly]);
+
+//   return (
+//     <div className="thread-body-container">
+//       <strong style={{ marginBottom: ".75em" }}>Aqua Responses</strong>
+//       {responseElements}
+//     </div>
+//   );
+// };
+
+// export default ThreadResponsesBuilder;
+
+
+
+// import React, { FC, useEffect, useState } from "react";
+// import ThreadItem from "../../../models/ThreadItem";
+// import ThreadResponse from "./ThreadResponse";
+
+
+// interface ThreadResponsesBuilderProps {
+//   threadItems?: Array<ThreadItem>;
+//   readOnly: boolean;
+// }
+
+// const ThreadResponsesBuilder: FC<ThreadResponsesBuilderProps> = ({
+//   threadItems, readOnly,
+// }) => {
+//   const [responseElements, setResponseElements] = useState<
+//     React.JSX.Element | undefined
+//   >();
+
+//   useEffect(() => {
+//     if (threadItems) {
+//       const thResponses = threadItems.map((ti) => {
+//         return (
+//           <li key={`thr-${ti.id}`}>
+//             <ThreadResponse
+//               body={ti.body}
+//               userName={ti.user.userName}
+//               lastModifiedOn={ti.createdOn}
+//               points={ti.points}
+//               readOnly={readOnly}
+//             />
+//           </li>
+//         );
+//       });
+//       setResponseElements(<ul>{thResponses}</ul>);
+//     }
+//   }, [threadItems, readOnly]);
+
+//   return (
+//     <div className="thread-body-container">
+//       <strong style={{ marginBottom: ".75em" }}>Responses</strong>
+//       {responseElements}
+//     </div>
+//   );
+// };
+
+// export default ThreadResponsesBuilder;

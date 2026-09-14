@@ -1,0 +1,9 @@
+.main-header {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    margin-top: 0.18em;
+    margin-bottom: 0.75em;
+    background-color: #d4effa;
+    /* background-color: #f8c276; */
+    /* background-color: white; */
+    border: solid 1px var(--border-color);
+  }

@@ -1,0 +1,98 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.9fr 1.5fr 0.9fr;
+    grid-template-rows: 2.75rem auto 3fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "refresh refresh refresh refresh"
+      "sidebar leftmenu content rightmenu";
+    gap: 0.75rem 0.4rem; /* This creates the white space above/below */
+}
+
+.refresh-button-container {
+    grid-area: refresh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3rem 0.5rem; /* Reduced padding */
+    background-color: #a6afcc;
+    margin: -0.375rem 0; /* Counteract the gap */
+}
+
+.navigation {
+    grid-area: nav;
+}
+
+.refresh-button-container {
+    grid-area: refresh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3rem 0.5rem; /* Reduced padding */
+    background-color: #a6afcc;
+    margin: -0.375rem 0; /* Counteract the gap */
+}
+
+.refresh-button {
+    padding: 0.5rem 1rem;
+    background-color: #b3c2f1; /* Grey color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+.refresh-button:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
+.refresh-button:active {
+    transform: translateY(1px); /* Click effect */
+}
+
+/* Rest of your existing CSS remains the same */
+.sidebar {
+    min-height: var(--min-screen-height);
+    grid-area: sidebar;
+    background-color: #A6BACC;
+}
+
+.leftmenu {
+    grid-area: leftmenu;
+    background-color: #fad5a2;
+}
+
+.content {
+    min-height: var(--min-screen-height);
+    grid-area: content;
+    background-color: #c1e5f3;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+}
+
+.rightmenu {
+    grid-area: rightmenu;
+    background-color: #FDBCA5;
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    .home-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.75rem auto 3fr; /* Maintain the refresh row */
+        grid-template-areas:
+          "nav"
+          "refresh" /* Keep refresh button on mobile */
+          "content";
+    }
+    
+    .refresh-button-container {
+        margin: 0; /* Add some horizontal padding on mobile */
+    }
+
+    .refresh-button {
+        padding: 0.6rem 1.2rem; /* Slightly larger on mobile */
+        font-size: 12px; /* Better touch targets */
+    }
+
+}

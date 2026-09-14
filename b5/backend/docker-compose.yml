@@ -1,0 +1,39 @@
+services:
+  ollama:
+    image: aquawisdom-ollama-b5:latest
+    container_name: aquawisdom-b5-ollama
+    cpus: "2.0"
+    ports:
+      - "11437:11434"
+    volumes:
+      - ollama_models_b5:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - b5-network
+
+  aquawisdom-api-b5:
+    image: aquawisdom-api:b5-1.0.0
+    build: .
+    ports:
+      - "5015:5015"
+    environment:
+      - NODE_ENV=production
+      - DOCKER_ENV=true
+      - PORT=5015
+      - HOST=0.0.0.0
+      - OLLAMA_HOST=http://ollama:11437
+      - OLLAMA_MODEL=Aqua_B5_v1
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    depends_on:
+      - ollama
+    networks:
+      - b5-network
+
+volumes:
+  ollama_models_b5:
+
+networks:
+  b5-network:
+    driver: bridge

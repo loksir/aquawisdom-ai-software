@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Western History</string>
+    <string name="title_activity_main">Western History</string>
+    <string name="package_name">com.aquawisdom.b8_v1</string>
+    <string name="custom_url_scheme">com.aquawisdom.b8_v1</string>
+</resources>

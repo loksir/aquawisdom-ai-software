@@ -1,0 +1,15 @@
+import { Entity, PrimaryColumn, Column } from 'typeorm';
+
+
+@Entity({ name:'sessions' }) // Specify the table name
+export class Session {
+    @PrimaryColumn('text')
+    sid: string; // Session ID
+
+    @Column('text')
+    sess: string; // Serialized session data
+
+    @Column('integer')
+    expires: number; // Expiration date
+}
+
