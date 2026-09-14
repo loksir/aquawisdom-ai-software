@@ -11,8 +11,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 #### Part A: Commercial Software Licenses
 | License | Target Audience | Price | Description |
 | :--- | :--- | :--- | :--- |
-| **Independent Developer Tier** | Developers / Freelancers| **Free** | 100% Free to download, test |
-| :--- | :--- | :--- | :--- |
+| **Independent Developer Tier** | Developers / Freelancers| **Free** | 100% Free to download, test. Optional: Buy me coffee by clicking the link below|
 | **Enterprise Developer Tier** | Developers / Vendors | **$960 / Year** | Grants commercial modification rights. Developer Setup Guide is provided. Includes email technical support. Billed as 12 monthly payments of $80. Support stops immediately if installment is stopped. Rejoining requires a new subscription starting from installment 1. |
 | **Home Use License** | Personal / Home Setup | **$600 One-time** | Official software production license for a single server in a personal/home setup. |
 | **Enterprise / Academic License** | Schools / Businesses | **$1,500 One-time** | Official software production license for a single server in a school or business. |
