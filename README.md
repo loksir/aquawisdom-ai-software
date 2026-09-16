@@ -9,7 +9,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 ### 💳 Select Your Tier:
 
 #### Part A: Commercial Software Licenses
-| License | Target Audience | Price | Description |
+| License | Target Audience | Price(US$) | Description |
 | :--- | :--- | :--- | :--- |
 | **Independent Developer Tier** | Developers / Freelancers| **Free** | 100% Free to download, test. Optional: Buy us coffee by clicking the link below|
 | **Enterprise Developer Tier** | Developers / Vendors | **$960 / Year** | Grants commercial modification rights. Developer Setup Guide is provided. Includes email technical support. Billed as 12 monthly payments of $80. Support stops immediately if installment is stopped. Rejoining requires a new subscription starting from installment 1. |
