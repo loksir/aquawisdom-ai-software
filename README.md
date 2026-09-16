@@ -21,7 +21,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 
 #### Part B: Plug-and-Play Home Package (Off-the-shelf Solutions)
 *Skip the compilation and setup. Get a fully pre-configured ecosystem delivered to your door.*
-| Package | Target Audience | Price | What's Included |
+| Package | Target Audience | Price(US$) | What's Included |
 | :--- | :--- | :--- | :--- |
 | **Plug-and-Play Home Package** | Families / Non-Technical Users | **$998** | **Hassle-free. Just plug it into your home router and follow the basic setup guide. No technical skills, coding, or compilation required.** <br> <br> • 1x Mini PC (AMD Ryzen 5, 16GB RAM, 512GB SSD) with pre-installed Home Use Server License. <br> • 1x 8" Android Tablet (8GB RAM, 512GB HD, Android 14). <br> • 5 User Licenses. <br> • 1 Year Office-Hour Email Support. |
 
