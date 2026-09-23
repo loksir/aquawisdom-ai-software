@@ -31,7 +31,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 * **Tax:** In-country tax of the customer is excluded.
 * **Delivery in Hong Kong:** Free.
 * **Delivery outside Hong Kong:** Paid by the customer.
-* **AI response and record creation time:** It may take 2-3 minutes or more, depending on the complexity of question. With powerful server and GPU, this process time can be substantially reduced.
+* **AI response and db record creation time:** It may take 2-3 minutes or more, depending on the complexity of questions. With powerful server and GPU, this process time can be substantially reduced. In addition, the number of AI requests can be reduced in a family by 20-40% with the avoidance of asking repetitive questions by the same user or amongst multiple users, due to unique design of auto-grouping of AI Q&As under different common topics or categories for easy retrieval and the sharing of views of records amongst multiple users.
 ---
 
 ### 🛒 Payment Links:
