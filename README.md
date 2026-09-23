@@ -31,7 +31,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 * **Tax:** In-country tax of the customer is excluded.
 * **Delivery in Hong Kong:** Free.
 * **Delivery outside Hong Kong:** Paid by the customer.
-
+* **AI response and record creation time:** It may take 2-3 minutes or more, depending on the complexity of question. With powerful server and GPU, this process time can be substantially reduced.
 ---
 
 ### 🛒 Payment Links:
