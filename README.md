@@ -94,7 +94,6 @@ For institutional, commercial, or enterprise deployments, we strongly recommend 
 ### 📄 Further Reading
 
 **For Developers & IT Vendors:**
-* For a detailed breakdown of investment protection and ROI, please refer to the **Developer ROI Analysis** document.
 * For technical architecture, CRISP design, and deployment workflows, please refer to the **Technical Write-up for Developers & IT Vendors** document.
 * For manual compilation steps, please refer to the **Developer Setup Guide**.
 
