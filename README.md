@@ -101,6 +101,8 @@ For institutional, commercial, or enterprise deployments, we strongly recommend 
 **For End-Users & Families:**
 * For more detailed product features, please refer to the **Product Write-up for Homes and Families** document.
 
+* The related documents can be downloaded through company website, https//:www.aqua-wisdom.com. 
+
 ---
 
 © 2026 AquaWisdom. All rights reserved.
