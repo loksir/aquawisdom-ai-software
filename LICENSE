@@ -16,6 +16,11 @@ Production usage requires a valid Commercial License:
 Ethical Use Restrictions:
 Any modification, redistribution, or deployment of the Licensed Work is strictly prohibited if it includes obscenity, emotional addiction, or negative messages. The protection of children’s wellbeing is of highest priority and cannot be compromised. Violation of these restrictions will result in immediate termination of the license and a permanent ban.
 
+Disclaimer of Liability & Regulatory Compliance:
+THE LICENSED WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE LICENSED WORK OR THE USE OR OTHER DEALINGS IN THE LICENSED WORK.
+
+While the Licensed Work is designed to process data locally to maximize privacy, the Licensor assumes no responsibility for the Licensee's compliance with local, regional, or international data protection laws (e.g., GDPR in the EU, CCPA in California, or FERPA in the US). It is the sole responsibility of the Licensee (or their organization) to ensure that their specific deployment, hardware configuration, and network setup meet all legal and regulatory requirements of their jurisdiction. For commercial or institutional deployments, it is highly recommended to consult a local IT vendor or compliance officer.
+
 Please refer to the README.md for the complete pricing table and terms.
 
 Licensed Work may be used for internal personal testing and evaluation purposes by any party.
