@@ -95,7 +95,7 @@ For institutional, commercial, or enterprise deployments, we strongly recommend 
 
 **For Developers & IT Vendors:**
 * For technical architecture, CRISP design, and deployment workflows, please refer to the **Technical Write-up for Developers & IT Vendors** document.
-* For manual compilation steps, please refer to the **Developer Setup Guide**.
+* For manual compilation steps, please refer to the **Developer Setup Guide** , which will be provided upon purchase of Enterprise Developer Tier.
 
 **For End-Users & Families:**
 * For more detailed product features, please refer to the **Product Write-up for Homes and Families** document.
