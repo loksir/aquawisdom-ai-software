@@ -81,11 +81,6 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
   </tr>
 </table>
 
-<img width="800" height="1280" alt="image" src="https://github.com/user-attachments/assets/de2aaaac-8c09-4f21-b7e5-33460a2c73c9" />
-
-<img width="800" height="1280" alt="image" src="https://github.com/user-attachments/assets/3f7a36e6-1b29-4110-8eb5-20259240fb3f" />
-
-<img width="300" alt="image 1" src="https://github.com/user-attachments/assets/be35237c-6f20-4793-82c0-4f30279ea7e2" />
 
 ### 📄 Further Reading
 
