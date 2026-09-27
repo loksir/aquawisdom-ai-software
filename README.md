@@ -57,6 +57,13 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 * ☁️ **[Cloud / Hosted Production License](mailto:sales@yourdomain.com)**
 * *Contact our accounts team to discuss custom licensing for SaaS and Cloud deployments.*
 
+⚠️ Disclaimer & Regulatory Compliance
+The AquaWisdom software and related hardware configurations are provided "AS IS", without warranty of any kind.
+
+Although AquaWisdom is designed to run locally to maximize data privacy and eliminate cloud API fees, users and organizations are solely responsible for ensuring their deployment complies with local and international data protection regulations (such as GDPR in the European Union, CCPA in California, or FERPA for educational institutions in the US).
+
+For institutional, commercial, or enterprise deployments, we strongly recommend engaging a local IT vendor or compliance officer to assist with network hardening, data retention policies, and local regulatory requirements. The Licensor assumes no liability for non-compliance with local laws.
+
 請謹慎使用程式碼。
 
 ---
