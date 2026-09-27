@@ -60,6 +60,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 請謹慎使用程式碼。
 
 ---
+<img width="800" height="1280" alt="image" src="https://github.com/user-attachments/assets/104cc0c8-50eb-4eb9-bc65-18efafaa4c57" />
 
 ### 📄 Further Reading
 
