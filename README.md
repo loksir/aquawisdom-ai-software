@@ -80,7 +80,7 @@ We utilize a "Complexity Moat" strategy: the source code is publicly available u
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/be35237c-6f20-4793-82c0-4f30279ea7e2" />
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/ca34e654-e1f4-45cb-9d62-8a01d54f3293" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/185738a9-48a5-49c3-9200-6872b66b57e9" />
 
 
 ### 📄 Further Reading
