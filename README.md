@@ -2,7 +2,7 @@
 
 AquaWisdom is a production-grade, affordable, on-premises AI ecosystem that transforms home environment into a private, offline-first intelligent library. By leveraging local LLMs, robust node.js/docker backend and multi-users support React/Capacitor frontend, AquaWisdom delivers a zero-latency, 100% private "Agent E-reader" experience without recurring cloud API fees. 
 
-Most important of all, users do not need to learn any prompt engineering but just follow intuitive 6-level menus with different in-depths and perspectives only around the topic or category chosen (without AI hallucination), by inputting their choices with simple instructions like "m2" for menu no.2 and "#3" for choice no.3 (as shown in pictures below). It is good for children, elderly or even adults. This is what a good education tool is supposed to be like.
+Most important of all, users do not need to learn any prompt engineering but just follow intuitive 6-level menus with different in-depths and perspectives only around the topic or category chosen (without AI hallucination), by inputting their choices with simple instructions like "m2" for menu no.2 and "#3" for choice no.3 (as shown in pictures below). It is good for children, elderly or even adults. This is what a good AI education tool is supposed to be like.
 
 The source code is publicly available under the Business Source License (BSL 1.1), but automated deployment scripts, pre-compiled binaries, and proprietary UI hardening are reserved for paid commercial tiers.
 
