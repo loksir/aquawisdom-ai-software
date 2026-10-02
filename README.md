@@ -97,7 +97,7 @@ For institutional, commercial, or enterprise deployments, we strongly recommend 
 
 **For Developers & IT Vendors:**
 * For technical architecture, CRISP design, and deployment workflows, please refer to the **AquaWisdom Technical Write-up for Developers & IT Vendors** document.
-* For manual compilation steps, please refer to the **Developer Setup Guide** , which will be provided upon subscription of Enterprise Developer Tier above.
+* For manual compilation steps, please refer to the **AquaWisdom Developer Setup Guide** , which will be provided upon subscription of Enterprise Developer Tier above.
 
 **For End-Users & Families:**
 * For more detailed product features, please refer to the **AquaWisdom AI-driven Digital Cultural Encyclopedia for Homes and Families** document.
