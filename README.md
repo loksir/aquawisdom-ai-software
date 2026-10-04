@@ -4,7 +4,7 @@ AquaWisdom is a production-grade, affordable(without GPU), on-premises(local) AI
 
 Most important of all, users do not need to learn any prompt engineering but just follow intuitive 6-level menus with different in-depths and perspectives only around the topic or category chosen (without AI hallucination), by inputting their choices with simple instructions like "m2" for menu no.2 and "#3" for choice no.3 (as shown in pictures below). It is good for children, elderly or even parents and teachers. Through their own Android tablets, they can share the stories of any topic or category amongst themselves. They can read or listen back the stories through text-to-speech even when they are not at home (without connection to Cloud AI). This is what a good and safe AI education tool is supposed to be like.
 
-The source code is publicly available under the Business Source License (BSL 1.1), but automated deployment scripts, pre-compiled binaries, and proprietary UI hardening are reserved for paid commercial tiers.
+The source code is publicly available under the Business Source License (BSL 1.1), but automated deployment scripts, pre-compiled binaries, and proprietary UI hardening are reserved for paid commercial tiers. You can build your own localized Digital Hist-Lit encyclopedia for the homes and families of your country, be it Spain, Italy, Korea, Egypt,...
 
 ---
 
