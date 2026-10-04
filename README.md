@@ -1,4 +1,4 @@
-# 🌊 AquaWisdom: The On-Premises(local) AI Self-created Digital Hist-Lit Encyclopedia
+# 🌊 AquaWisdom: The On-Premises(local) AI-driven Self-created Digital Hist-Lit Encyclopedia
 
 AquaWisdom is a production-grade, affordable(without GPU), on-premises(local) AI ecosystem that transforms home or classroom environment into a private, offline-first intelligent digital library with "personalized"(self-created) Hist-Lit encyclopedia or stories  for more than 500 famous figures in various eras in Chinese and Western history and literature in chronological order. By leveraging local LLMs, robust node.js/docker backend and multi-users support React/Capacitor frontend, AquaWisdom delivers a zero-latency, 100% private "Agent E-reader" experience without recurring cloud API fees. 
 
