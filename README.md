@@ -73,24 +73,36 @@ For institutional, commercial, or enterprise deployments, we strongly recommend 
 
 <table align="center">
   <tr>
-    <td><img width="300" alt="image 1" src="https://github.com/user-attachments/assets/345d5f8d-956b-4b16-bc78-a6f7ab174599" /></td>
-    <td><img width="300" alt="image 2" src="https://github.com/user-attachments/assets/de2aaaac-8c09-4f21-b7e5-33460a2c73c9" /></td>
+    <td><img width="300" alt="image 1" src="https://github.com/user-attachments/assets/b9c3c342-cac0-4dc5-b6cd-d3f4db8d4c8a" /></td>
+    <td><img width="300" alt="image 2" src="https://github.com/user-attachments/assets/e41776be-b7b9-4408-96bb-8471082502e6" /></td>
   </tr>
 </table>
 
 <table align="center">
   <tr>
-    <td><img width="300" alt="image 1" src="https://github.com/user-attachments/assets/1773c2e2-82d1-482e-921e-990f6f6e0851" /></td>
-    <td><img width="300" alt="image 2" src="https://github.com/user-attachments/assets/be35237c-6f20-4793-82c0-4f30279ea7e2" /></td>
+    <td><img width="300" alt="image 1" src="https://github.com/user-attachments/assets/2994c057-8c5d-4156-a99d-7e6d5e3eca98" /></td>
+    <td><img width="300" alt="image 2" src="https://github.com/user-attachments/assets/f6353aa6-12a7-4a4c-be8a-9539d9b93080" /></td>
   </tr>
 </table>
 
 <table align="center">
   <tr>
-    <td><img width="300" alt="image 1" src="https://github.com/user-attachments/assets/3f7a36e6-1b29-4110-8eb5-20259240fb3f" /></td>
-    <td><img width="300" alt="image 2" src="https://github.com/user-attachments/assets/728bec28-8e5b-4d3a-95b7-d17734210835" /></td>
+    <td><img width="300" alt="image 1" src="https://github.com/user-attachments/assets/3f181aaa-80a0-4318-8f48-583bcb679131" /></td>
+    <td><img width="300" alt="image 2" src="https://github.com/user-attachments/assets/4fb0d30a-3818-41e3-8dc0-a564b391e684" /></td>
   </tr>
 </table>
+
+<img width="1536" height="2040" alt="WhatsApp Image 2026-10-08 at 10 24 50 AM_1" src="https://github.com/user-attachments/assets/b9c3c342-cac0-4dc5-b6cd-d3f4db8d4c8a" />
+
+<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 47 32 AM" src="https://github.com/user-attachments/assets/2994c057-8c5d-4156-a99d-7e6d5e3eca98" />
+
+<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 44 05 AM" src="https://github.com/user-attachments/assets/f6353aa6-12a7-4a4c-be8a-9539d9b93080" />
+
+<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 44 05 AM_1" src="https://github.com/user-attachments/assets/3f181aaa-80a0-4318-8f48-583bcb679131" />
+
+<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 44 05 AM_2" src="https://github.com/user-attachments/assets/4fb0d30a-3818-41e3-8dc0-a564b391e684" />
+
+<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 10 25 38 AM_3" src="https://github.com/user-attachments/assets/e41776be-b7b9-4408-96bb-8471082502e6" />
 
 
 ### 📄 Further Reading
