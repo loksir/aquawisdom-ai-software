@@ -47,7 +47,7 @@ The source code is publicly available under the Business Source License (BSL 1.1
 * 🏢 **[Corporate Developer & Custom Pricing](mailto:sales@yourdomain.com)**
 * *Contact our accounts team to negotiate a custom annual subscription and SLA.*
 
-* 📦 **[Buy Plug-and-Play Home Package ($998 - First 50 Users)](https://buy.stripe.com/00wdR1eG882x6OF6i35gc01)**
+* 📦 **[Buy Entry-Level Plug-and-Play Home Package ($998 - First 50 Users)](https://buy.stripe.com/00wdR1eG882x6OF6i35gc01)**
 * *Off-the-shelf, hassle-free solution. Just plug into your home router. Includes Mini PC, Tablet, 5 User Licenses, and 1 Year Support. (Special price for first 50 users only, then $1,200).*
 
 * 🏠 **[Purchase Home Use License - Software Only ($600 One-time)](https://buy.stripe.com/14A28j1TmbeJgpf6i35gc02)**
