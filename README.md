@@ -21,11 +21,11 @@ The source code is publicly available under the Business Source License (BSL 1.1
 | **Enterprise / Academic Use License** | Schools / Businesses | **$1,500 One-time** | Official software production license for a single server in a school or business. |
 | **Cloud / Hosted License** | SaaS / Cloud Providers | **Custom Pricing** | For companies hosting the software as a cloud service. Custom pricing based on customer base. |
 
-#### Part B: Plug-and-Play Home Package (Off-the-shelf Solutions)
+#### Part B: Entry-Level Plug-and-Play Home Package (Off-the-shelf Solutions)
 *Skip the compilation and setup. Get a fully pre-configured ecosystem delivered to your door.*
 | Package | Target Audience | Price(US$) | What's Included |
 | :--- | :--- | :--- | :--- |
-| **Plug-and-Play Home Package** | Families / Non-Technical Users | **$998** | **Hassle-free. Just plug it into your home router and follow the basic setup guide. No technical skills, coding, or compilation required.** <br> <br> • 1x Mini PC (AMD Ryzen 5, 16GB RAM, 512GB SSD) with pre-installed Home Use Server License. <br> • 1x 8" Android Tablet (8GB RAM, 512GB HD, Android 14). <br> • 5 User Licenses. <br> • 1 Year Office-Hour Email Support. |
+| **Entry-Level Plug-and-Play Home Package** | Families / Non-Technical Users | **$998** | **Hassle-free. Just plug it into your home router and follow the basic setup guide. No technical skills, coding, or compilation required.** <br> <br> • 1x Mini PC (AMD Ryzen 5, 16GB RAM, 512GB SSD) with pre-installed Home Use Server License. <br> • 1x 8" Android Tablet (8GB RAM, 512GB HD, Android 14). <br> • 5 User Licenses. <br> • 1 Year Office-Hour Email Support. |
 
 **⚠️ Important Notes for Part B:**
 * **Limited Availability:** The special price of $998 is available only for the first 50 paid users. Afterward, the price reverts to the original price of US$1,200.
