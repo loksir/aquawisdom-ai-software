@@ -92,18 +92,6 @@ For institutional, commercial, or enterprise deployments, we strongly recommend 
   </tr>
 </table>
 
-<img width="1536" height="2040" alt="WhatsApp Image 2026-10-08 at 10 24 50 AM_1" src="https://github.com/user-attachments/assets/b9c3c342-cac0-4dc5-b6cd-d3f4db8d4c8a" />
-
-<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 47 32 AM" src="https://github.com/user-attachments/assets/2994c057-8c5d-4156-a99d-7e6d5e3eca98" />
-
-<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 44 05 AM" src="https://github.com/user-attachments/assets/f6353aa6-12a7-4a4c-be8a-9539d9b93080" />
-
-<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 44 05 AM_1" src="https://github.com/user-attachments/assets/3f181aaa-80a0-4318-8f48-583bcb679131" />
-
-<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 9 44 05 AM_2" src="https://github.com/user-attachments/assets/4fb0d30a-3818-41e3-8dc0-a564b391e684" />
-
-<img width="1536" height="2040" alt="WhatsApp Image 2026-10-10 at 10 25 38 AM_3" src="https://github.com/user-attachments/assets/e41776be-b7b9-4408-96bb-8471082502e6" />
-
 
 ### 📄 Further Reading
 
