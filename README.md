@@ -33,7 +33,7 @@ The source code is publicly available under the Business Source License (BSL 1.1
 * **Tax:** In-country tax of the customer is excluded.
 * **Delivery in Hong Kong:** Free.
 * **Delivery outside Hong Kong:** Paid by the customer.
-* **AI response and db record creation time:** It may take 2-3 minutes or more, depending on the complexity of questions. With powerful mini pc and GPU, this process time can be substantially reduced. However, the number of AI requests can be reduced in a family by 20-40% with the avoidance of asking repetitive questions by the same user or amongst multiple users, due to unique design of auto-grouping of AI Q&A db records under different common topics or categories for easy retrieval with simple scrolling and clicks on Android tablets, and the auto-sharing of views of db records amongst multiple users.
+* **AI response and db record creation time:** It may take 2-3 minutes or more, depending on the complexity of questions. With powerful mini pc and GPU, this process time can be substantially reduced. However, the number of AI requests can be reduced in a family by 20-40% with the avoidance of asking repetitive questions by the same user or amongst multiple users, due to unique design of auto-grouping of AI Q&A db records under different common topics or categories for easy retrieval with simple scrolling and clicks on Android tablets, and the auto-sharing of views of db records amongst multiple users. (see screenshots below)
 ---
 
 ### 🛒 Payment Links:
