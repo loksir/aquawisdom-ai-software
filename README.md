@@ -39,7 +39,7 @@ SHE's source code is publicly available under the Business Source License (BSL 1
 ### 🛒 Payment Links:
 
 * ☕ **[Individual Developer & NGO / Church (Free)](https://buymeacoffee.com/aquawisdom_ai_software)**
-* *100% Free to download, test, and their own use for NGOs. (Optional: Buy us a coffee to support ongoing development!)*
+* *100% Free to download, test, and for their own use for NGOs. (Optional: Buy us a coffee to support ongoing development!)*
 
 * 🛠 **[Subscribe to Enterprise Developer Tier ($960/Year - 12 Installments)](https://buy.stripe.com/9B69AL55y5Up7SJdKv5gc00)**
 * *Grants commercial modification rights. Developer Setup Guide is provided. Includes email technical support. Billed as 12 monthly payments of $80. Support stops immediately if installment is stopped. Rejoining requires a new subscription starting from installment 1.*
