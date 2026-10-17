@@ -16,7 +16,7 @@ SHE's source code is publicly available under the Business Source License (BSL 1
 | **Independent Developer Tier** | Developers / Freelancers| **Free** | 100% Free to download, test. Optional: Buy us coffee by clicking the link below|
 | **Enterprise Developer Tier** | Developers / Vendors | **$960 / Year** | Grants commercial modification rights. Developer Setup Guide is provided. Includes email technical support. Billed as 12 monthly payments of $80. Support stops immediately if installment is stopped. Rejoining may require a new subscription starting from installment 1. |
 | **Corporate Developer Tier** | Corporates / Large Vendors| **Custom Pricing** | Scale of projects is large|
-| **NGO/Church Use License** | NGO / Church | **Free** | 100% Free to download and install, but maybe independent software developer or IT vendor needs to be engaged to provide professional services to ensure smooth implementation. Optional: Buy us coffee by clicking the link below |
+| **NGO/Church Use License for their own use** | NGO / Church | **Free** | 100% Free to download and install, but maybe independent software developer or IT vendor needs to be engaged to provide professional services to ensure smooth implementation. Optional: Buy us coffee by clicking the link below |
 | **Home Use License** | Personal / Home Setup | **$600 One-time** | Official software production license for a single server in a personal/home setup. |
 | **Enterprise / Academic Use License** | Schools / Businesses | **$1,500 One-time** | Official software production license for a single server in a school or business. |
 | **Cloud / Hosted License** | SaaS / Cloud Providers | **Custom Pricing** | For companies hosting the software as a cloud service. Custom pricing based on customer base. |
@@ -39,7 +39,7 @@ SHE's source code is publicly available under the Business Source License (BSL 1
 ### 🛒 Payment Links:
 
 * ☕ **[Individual Developer & NGO / Church (Free)](https://buymeacoffee.com/aquawisdom_ai_software)**
-* *100% Free to download, test, and use for NGOs. (Optional: Buy us a coffee to support ongoing development!)*
+* *100% Free to download, test, and their own use for NGOs. (Optional: Buy us a coffee to support ongoing development!)*
 
 * 🛠 **[Subscribe to Enterprise Developer Tier ($960/Year - 12 Installments)](https://buy.stripe.com/9B69AL55y5Up7SJdKv5gc00)**
 * *Grants commercial modification rights. Developer Setup Guide is provided. Includes email technical support. Billed as 12 monthly payments of $80. Support stops immediately if installment is stopped. Rejoining requires a new subscription starting from installment 1.*
